@@ -1,0 +1,22 @@
+<!doctype html> <html> 
+	<head>
+		<title>Tic-tac-toe</title> 
+		<meta charset = "utf-8"> 
+		<link href = "ttt-styles.css"
+				rel = "stylesheet">
+	</head> 
+	<body>
+		<h1 class = "ttt-heading">Let's play Tic-tac-toe</h1>
+		<input type="radio" name="playerSelect" checked>: vs. Human<br>
+		<input type="radio" name="playerSelect">: vs. Computer(You goes first.)<br>
+		<input type="radio" name="playerSelect">: vs. Computer(AI goes first.)<br>
+		<script src = "tttModel.js"></script>
+		<script src = "tttView.js"></script>
+		<script src = "tttController.js"></script>
+		<script src = "tttAI.js"></script>
+		<script>
+		var test = new TttController(3, 3, playerMove);
+		document.body.appendChild(test.view.grid);
+		</script>
+	</body>
+</html>
