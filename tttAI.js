@@ -193,7 +193,7 @@ function getBestMoveV2(boardModel, isMaximizingPlayer, alpha, beta)
 			{
 				if(boardModel.isValidMove(i, j))
 				{
-					debugger;
+					//debugger;
 					var reducedBoardModel =  new TttModel(boardModel.row, boardModel.col);
 					reducedBoardModel.players = boardModel.getCurrentPlayers();
 					reducedBoardModel.tttBoard = boardModel.getCurrentBoard();
@@ -210,7 +210,7 @@ function getBestMoveV2(boardModel, isMaximizingPlayer, alpha, beta)
 						bestMove = new move(currentBestXMove.row, currentBestXMove.col, alpha);
 						return bestMove;
 					}
-					debugger;
+					//debugger;
 				}
 			}
 		}
@@ -226,7 +226,7 @@ function getBestMoveV2(boardModel, isMaximizingPlayer, alpha, beta)
 			{
 				if(boardModel.isValidMove(i, j))
 				{
-					debugger;
+					//debugger;
 					var reducedBoardModel =  new TttModel(boardModel.row, boardModel.col);
 					reducedBoardModel.players = boardModel.getCurrentPlayers();
 					reducedBoardModel.tttBoard = boardModel.getCurrentBoard();
@@ -243,7 +243,7 @@ function getBestMoveV2(boardModel, isMaximizingPlayer, alpha, beta)
 						bestMove = new move(currentBestOMove.row, currentBestOMove.col, beta);
 						return bestMove;
 					}
-					debugger;
+					//debugger;
 				}
 			}
 		}
