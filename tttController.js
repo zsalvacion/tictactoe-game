@@ -33,7 +33,6 @@ function playerMove(tableCell, boardModel)
 		var row = event.target.parentNode.rowIndex;
 		var col = event.target.cellIndex;
 
-		playerSelect[2].addEventListener(boardModel)
 		//human vs. human
 		if(playerSelect[0].checked)
 		{
